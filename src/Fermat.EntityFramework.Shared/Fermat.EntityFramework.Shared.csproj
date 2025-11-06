@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>Fermat.EntityFramework.Shared</PackageId>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.0</Version>
+        <Authors>Samet Karademir</Authors>
+        <PackageTags>dotnet;entityframework;shared;repository;unitofwork</PackageTags>
+        <PackageProjectUrl>https://github.com/Fermat-Lab/fermat-entityframework-shared</PackageProjectUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="/" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Fermat.Domain.Shared" Version="1.0.0" />
+        <PackageReference Include="Fermat.Exceptions.Core" Version="0.0.1" />
+        <PackageReference Include="Fermat.Extensions.AspNetCore" Version="0.0.1" />
+        <PackageReference Include="Fermat.Extensions.Security" Version="0.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10"/>
+        <PackageReference Include="System.Linq.Dynamic.Core" Version="1.6.2"/>
+    </ItemGroup>
+    
+</Project>
